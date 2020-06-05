@@ -1,0 +1,99 @@
+<odoo>
+    <record id="ticket_form" model="website.menu">
+        <field name="name" >Tickets</field>
+        <field name="url">/ticket_webform/</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence">5</field>
+    </record>
+    <template id="create_ticket" name="Tickets">
+        <t t-call="website.layout">
+             <form  role="form" action="/create/ticket/" method="POST">
+            <div class="row">
+                 <div class="col-md-1"></div>
+                <div class="col-md-5">
+                     <div id="wrap">
+                <div id="oe_structure">
+                <div class="container">
+
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                        <div class="form-group">
+                            <label for="name" class="control-label">Name</label>
+                            <input type="text" name="name" t-att-value="name" id="name"
+                            class="form-control" required="required" placeholder="eg.Your Name"/>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="age" class="control-label">Age</label>
+                            <input type="number" name="age" t-att-value="age" id="age"
+                            class="form-control" required="required" placeholder="Enter Age"/>
+                        </div>
+
+
+                      <div class="clearfix oe_login_buttons">
+                        <button type="submit" class="btn btn-primary pull-left">
+                            Send
+                        </button>
+                    </div>
+
+
+
+                </div>
+               </div>
+            </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="form-group">
+                            <label for="email" class="control-label">Email</label>
+                            <input type="email" name="email" t-att-value="email" id="email"
+                            class="form-control" required="required" placeholder="Email"/>
+                    </div>
+                    <div class="form-group">
+                      <label for="text" class="control-label">Gender</label>
+                         <select class="form-control" name="gender">
+
+
+                             <t t-foreach="a" t-as="c">
+                               <option t-attf-value="doctor_id" t-att-selected="WHATEVER_CATEGORY_ID_YOU_WANT_TO_HAVE_SELECTED"><t t-esc="c.name"/></option>
+                             </t>
+<!--                           <option t-attf-value="'male'">Male</option>-->
+<!--                           <option t-attf-value="'female'">Female</option>-->
+                         </select>
+                     </div>
+                </div>
+
+
+                <div class="col-md-1"></div>
+            </div>
+              </form>
+
+        </t>
+    </template>
+    <record id="patient_thanks" model="website.page">
+        <field name="name">Thanks</field>
+        <field name="type">qweb</field>
+        <field name="url">/patient-thank</field>
+        <field name="website_published">True</field>
+        <field name="key">our_hospital.patient_thanks</field>
+        <field name="arch" type="xml">
+            <t name="thanks" t-name="our_hospital.patient_thanks">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div class="container">
+                            <h1>Thanks</h1>
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="alert alert-success" role="status" >
+                                    The patient have been create successfully
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+
+            </t>
+        </field>
+    </record>
+</odoo>

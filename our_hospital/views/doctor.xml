@@ -1,0 +1,94 @@
+<odoo>
+    <record id="doctor_tree" model="ir.ui.view">
+        <field name="name">hospital.doctor.tree</field>
+        <field name="model">doctor</field>
+        <field name="arch" type="xml">
+            <tree string="Doctors">
+                <field name="name"/>
+                <field name="gender"/>
+                <field name="email"/>
+            </tree>
+        </field>
+     </record>
+
+    <record id="doctor_kanban" model="ir.ui.view">
+        <field name="name">doctor.kanban</field>
+        <field name="model">doctor</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="gender" ><br/>
+                <field name="name"/>
+                <field name="id"/>
+                <field name="image"/>
+                <field name="email"/>
+                <field name="gender"/>
+                <templates>
+                     <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click o_kanban_record_has_image_fill o_hospital_patient_kanban">
+                            <t t-if="record.image.raw_value">
+                                <div class="o_kanban_image_fill_left d-none d-md-block"
+                                     t-attf-style="background-image:url('#{kanban_image('doctor','image',record.id.raw_value)}')"/>
+                            </t>
+
+                            <t t-else="">
+                                    <img class="o_kanban_image" alt="Avatar" t-att-src='_s + "/base/static/img/avatar.png"'/>
+
+                            </t>
+                                <div class="oe_kanban_details">
+                                   <strong class="o_kanban_record_title" >
+                                       <field name="display_name"/></strong>
+                                       <div class="o_kanban_tags_section">
+                                           <ul>
+
+                                               <li>Doctor Name:<field name="name"/> </li>
+                                           </ul>
+                                       </div>
+                                </div><br/>
+                        </div>
+                     </t>
+<!--                    <searchpanel>-->
+<!--                          <field name="doctor_id" icon="fa-building"/>-->
+<!--                          <field name="doctor_id" select="multi" icons="fa-tags"/>-->
+<!--                          </searchpanel>-->
+                    </templates>
+
+
+            </kanban>
+        </field>
+
+     </record>
+<!--     <record id="hospital_doctor" model="ir.ui.view">-->
+<!--        <field name="name">doctor form</field>-->
+<!--        <field name="model">doctor</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <form string="Doctor">-->
+<!--                <sheet>-->
+<!--                    <group>-->
+<!--                        <group>-->
+<!--                            <field name="name"/>-->
+<!--                            <field name="email"/>-->
+<!--                        </group>-->
+<!--                        <group>-->
+<!--                            <field name="gender"/>-->
+<!--                            <field name="user_id"/>-->
+<!--                        </group>-->
+<!--                    </group>-->
+<!--                </sheet>-->
+<!--            </form>-->
+<!--        </field>-->
+<!--     </record>-->
+    <record id="action_doctor" model="ir.actions.act_window">
+        <field name="name">Doctor</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">doctor</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="xml">
+            <p class="o_view_nocontent_smiling_face">
+             Create your Doctor Lists
+            </p>
+        </field>
+
+    </record>
+    <menuitem id="hospital_doctor" parent="Hospital_root" action="action_doctor" sequence="4"/>
+</odoo>

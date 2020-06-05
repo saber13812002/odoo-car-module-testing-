@@ -1,0 +1,43 @@
+<odoo>
+    <record id="parking_form" model="ir.ui.view">
+        <field name="name">Parking Form</field>
+        <field name="model">our.parking</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="car_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+
+    </record>
+      <record id="parking_tree_form" model="ir.ui.view">
+        <field name="name">Car Tree</field>
+        <field name="model">our.parking</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="car_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_parking" model="ir.actions.act_window">
+        <field name="res_model">our.parking</field>
+        <field name="name">Parking</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+              Create your Own Car
+            </p>
+        </field>
+
+    </record>
+    <menuitem name="Parking" parent="menu_car_root" id="car_menu_parking" sequence="2" action="action_parking"/>
+</odoo>

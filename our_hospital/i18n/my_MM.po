@@ -1,0 +1,974 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* our_hospital
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-25 04:52+0000\n"
+"PO-Revision-Date: 2020-02-25 04:52+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: our_hospital
+#: model:mail.template,body_html:our_hospital.patient_card_email_template
+msgid "<div style=\"margin: 0px; padding: 0px;\">\n"
+"                    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"                        Dear ${object.name}\n"
+"\n"
+"                        <br/><br/>\n"
+"                        Here is your patient card with reference\n"
+"                        <br/><br/>\n"
+"                        Age:${object.age}<br/>\n"
+"                        Contact No:${object.name}\n"
+"                        <br/><br/>\n"
+"                        Do not hesitate to contact us if you have any question.\n"
+"                    </p>\n"
+"                </div>\n"
+"            "
+msgstr ""
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.report_patient
+msgid "<strong>Age: </strong>"
+msgstr "အသက်"
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.report_patient
+msgid "<strong>Group: </strong>"
+msgstr "အုပ်စု"
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.report_patient
+msgid "<strong>Ph No: </strong>"
+msgstr "ဖုန်းနံပါတ်"
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.sale_report_inherit
+msgid "<strong>Test Report Customization</strong>"
+msgstr "စမ်းသပ်မှုအစီရင်ခံစာစိတ်ကြိုက်"
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.hospital_patient_page
+msgid "AAAAAAAAAAAA"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__message_needaction
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__message_needaction
+msgid "Action Needed"
+msgstr "အရေးယူမှုလိုအပ်"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__active
+msgid "Active"
+msgstr "တက်ကြွ"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__activity_ids
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__activity_ids
+msgid "Activities"
+msgstr "လှုပ်ရှားမှုများ"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__activity_state
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__activity_state
+msgid "Activity State"
+msgstr "လှုပ်ရှားမှုပြည်နယ်"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__age
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__age
+msgid "Age"
+msgstr "အသက်"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__age_group
+msgid "Age Group"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__age1
+msgid "Age2"
+msgstr ""
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.patient_kanban
+msgid "Age:"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__allday
+msgid "All Day"
+msgstr "တနေ့လုံး"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__ammount
+msgid "Ammount"
+msgstr "ငွေပမာဏ"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__appointment_count
+msgid "Appointment"
+msgstr "ရက်ချိန်း"
+
+#. module: our_hospital
+#: model:ir.actions.report,name:our_hospital.report_appointment
+msgid "Appointment Card"
+msgstr "ရက်ချိန်းယူကဒ်"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_create_appointment__appointment_date
+msgid "Appointment Date"
+msgstr "ရက်ချိန်းရက်"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_hospital_appointment_lines__appointment_id
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__name
+msgid "Appointment ID"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model,name:our_hospital.model_hospital_appointment_lines
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__appointment_line
+msgid "Appointment Lines"
+msgstr ""
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.ticket_pivot
+msgid "Appointment Pivot"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model,name:our_hospital.model_report_our_hospital_report_appointment
+msgid "Appointment Report"
+msgstr "ခန့်အပ်မှုအစီရင်ခံစာ"
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.appointment_tree
+msgid "Appointment Tree"
+msgstr ""
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.ticket_graph
+msgid "Appointment graph"
+msgstr ""
+
+#. module: our_hospital
+#: code:addons/our_hospital/models/patient.py:121
+#: model:ir.actions.act_window,name:our_hospital.action_appointment
+#: model:ir.actions.act_window,name:our_hospital.action_patient_appointments
+#: model:ir.actions.act_window,name:our_hospital.open_patients_appointments
+#: model:ir.ui.menu,name:our_hospital.hospital_appointment
+#: model_terms:ir.ui.view,arch_db:our_hospital.appointment_form
+#: model_terms:ir.ui.view,arch_db:our_hospital.hospital_patient_form
+#, python-format
+msgid "Appointments"
+msgstr "ရက်ချိန်း"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__message_attachment_count
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.patient_kanban
+msgid "Avatar"
+msgstr ""
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.hospital_patient_page
+msgid "BBBBBBBBBB"
+msgstr ""
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.report_patient
+msgid "Barcode"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.actions.act_window,name:our_hospital.act_book_appointment
+#: model_terms:ir.ui.view,arch_db:our_hospital.dashboard_form_view
+msgid "Book Appointment"
+msgstr "စာအုပ်ချိန်းဆိုမှု"
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.hospital_patient_page
+msgid "CCCCCCCCCC"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_res_config_settings__module_crm
+msgid "CRM"
+msgstr ""
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.create_appointment_form
+msgid "Cancel"
+msgstr "ပယ်ဖျက်ပါ"
+
+#. module: our_hospital
+#: selection:our.appointment,state:0
+msgid "Cancelled"
+msgstr "ဖျက်သိမ်းခဲ့သည်"
+
+#. module: our_hospital
+#: model:ir.module.category,description:our_hospital.module_category_hospital
+msgid "Category for Hospital"
+msgstr "ဆေးရုံအမျိုးအစား"
+
+#. module: our_hospital
+#: model:ir.actions.server,name:our_hospital.test_patient_cron_ir_actions_server
+#: model:ir.cron,cron_name:our_hospital.test_patient_cron
+#: model:ir.cron,name:our_hospital.test_patient_cron
+msgid "Check Patient Status"
+msgstr "လူနာအခြေအနေကိုစစ်ဆေးပါ"
+
+#. module: our_hospital
+#: selection:res.partner,company_type:0
+msgid "Company"
+msgstr "ကုမ္ပဏီ"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_res_partner__company_type
+#: model:ir.model.fields,field_description:our_hospital.field_res_users__company_type
+msgid "Company Type"
+msgstr "ကုမ္ပဏီအမျိုးအစား"
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.hospital_patient_page
+msgid "Computer are simply value or the set of value"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model,name:our_hospital.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.ui.menu,name:our_hospital.hospital_configuration
+msgid "Configuration"
+msgstr "ဖွဲ့စည်းပုံ"
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.appointment_form
+#: selection:our.appointment,state:0
+msgid "Confirm"
+msgstr "အတည်ပြုပါ"
+
+#. module: our_hospital
+#: model:ir.model,name:our_hospital.model_res_partner
+msgid "Contact"
+msgstr "ဆက်သွယ်ရန်"
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.create_appointment_form
+msgid "Create"
+msgstr "ဖန်တီးပါ"
+
+#. module: our_hospital
+#: model:ir.actions.act_window,name:our_hospital.create_appointment_wizard
+#: model:ir.ui.menu,name:our_hospital.hospital_create_appointment
+#: model_terms:ir.ui.view,arch_db:our_hospital.create_appointment_form
+#: model_terms:ir.ui.view,arch_db:our_hospital.hospital_patient_form
+msgid "Create Appointment"
+msgstr "ရက်ချိန်းယူပါ"
+
+#. module: our_hospital
+#: model_terms:ir.actions.act_window,help:our_hospital.action_appointment
+msgid "Create your Appointment"
+msgstr ""
+
+#. module: our_hospital
+#: model_terms:ir.actions.act_window,help:our_hospital.action_doctor
+msgid "Create your Doctor Lists"
+msgstr ""
+
+#. module: our_hospital
+#: model_terms:ir.actions.act_window,help:our_hospital.action_patient
+msgid "Create your First Patient !"
+msgstr "သင်၏ပထမဆုံးလူနာကိုဖန်တီးပါ"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_create_appointment__create_uid
+#: model:ir.model.fields,field_description:our_hospital.field_doctor__create_uid
+#: model:ir.model.fields,field_description:our_hospital.field_hospital_appointment_lines__create_uid
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__create_uid
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__create_uid
+#: model:ir.model.fields,field_description:our_hospital.field_report_our_hospital_report_appointment__create_uid
+#: model:ir.model.fields,field_description:our_hospital.field_report_our_hospital_report_patient__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_create_appointment__create_date
+#: model:ir.model.fields,field_description:our_hospital.field_doctor__create_date
+#: model:ir.model.fields,field_description:our_hospital.field_hospital_appointment_lines__create_date
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__create_date
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__create_date
+#: model:ir.model.fields,field_description:our_hospital.field_report_our_hospital_report_appointment__create_date
+#: model:ir.model.fields,field_description:our_hospital.field_report_our_hospital_report_patient__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__partner_id
+msgid "Customer"
+msgstr "ဖောက်သည်"
+
+#. module: our_hospital
+#: model:ir.actions.act_window,name:our_hospital.hospital_dashboard
+#: model:ir.ui.menu,name:our_hospital.menu_dashboard
+#: model_terms:ir.ui.view,arch_db:our_hospital.dashboard_form_view
+msgid "Dashboard"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__date
+msgid "Date"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__date
+msgid "DateTime"
+msgstr ""
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.appointment_form
+msgid "Delete"
+msgstr ""
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.create_appointment_form
+msgid "Delete Data"
+msgstr "ဖျက်ပါ"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__note
+#: model_terms:ir.ui.view,arch_db:our_hospital.hospital_patient_form
+msgid "Description"
+msgstr "ဖော်ပြချက်"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_create_appointment__display_name
+#: model:ir.model.fields,field_description:our_hospital.field_doctor__display_name
+#: model:ir.model.fields,field_description:our_hospital.field_hospital_appointment_lines__display_name
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__display_name
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__display_name
+#: model:ir.model.fields,field_description:our_hospital.field_report_our_hospital_report_appointment__display_name
+#: model:ir.model.fields,field_description:our_hospital.field_report_our_hospital_report_patient__display_name
+#: model:ir.model.fields,field_description:our_hospital.field_report_our_hospital_report_patient_xls__display_name
+msgid "Display Name"
+msgstr "ဖော်ပြမည့်အမည်"
+
+#. module: our_hospital
+#: model:ir.actions.act_window,name:our_hospital.action_doctor
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__doctor_id
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__doctor_id
+#: model:ir.ui.menu,name:our_hospital.hospital_doctor
+#: model:res.groups,name:our_hospital.group_hospital_doctor
+msgid "Doctor"
+msgstr "ဆရာဝန်"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__doctor_gender
+msgid "Doctor Gender"
+msgstr "ကျား၊ဆရာဝန်"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_doctor__name
+msgid "Doctor Name"
+msgstr "ဆရာဝန်အမည်"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__doctor_note
+msgid "Doctor Notes"
+msgstr "ဆရာဝန်မှတ်စုများ"
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.appointment_form
+msgid "Doctor Prescription"
+msgstr "ဆရာဝန်ညွှန်း"
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.doctor_tree
+msgid "Doctors"
+msgstr "ဆရာဝန်များ"
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.appointment_form
+#: selection:our.appointment,state:0
+msgid "Done"
+msgstr ""
+
+#. module: our_hospital
+#: selection:our.appointment,state:0
+msgid "Draft"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_doctor__email
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__email
+#: model_terms:ir.ui.view,arch_db:our_hospital.hospital_patient_page
+msgid "Email"
+msgstr "အီးမေးလ်"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__Date
+msgid "End Date"
+msgstr ""
+
+#. module: our_hospital
+#: selection:doctor,gender:0
+#: model_terms:ir.ui.view,arch_db:our_hospital.hodpital_patient_search
+#: selection:our.patient,doctor_gender:0
+#: selection:our.patient,gender:0
+msgid "Female"
+msgstr "အမျိုးသမီး"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__message_follower_ids
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__message_channel_ids
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__message_partner_ids
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_doctor__gender
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__gender
+#: model_terms:ir.ui.view,arch_db:our_hospital.hodpital_patient_search
+msgid "Gender"
+msgstr "လိင်"
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.create_appointment_form
+msgid "Get Data"
+msgstr "ဒေတာကိုရယူပါ"
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.hodpital_patient_search
+msgid "Group By"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.ui.menu,name:our_hospital.Hospital_root
+#: model_terms:ir.ui.view,arch_db:our_hospital.res_config_settings_view_form
+msgid "Hospital"
+msgstr "ဆေးရုံ"
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.res_config_settings_view_form
+msgid "Hospital CRM"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.module.category,name:our_hospital.module_category_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.res_config_settings_view_form
+msgid "Hospital Management"
+msgstr "ဆေးရုံစီမံခန့်ခွဲမှု"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_create_appointment__id
+#: model:ir.model.fields,field_description:our_hospital.field_doctor__id
+#: model:ir.model.fields,field_description:our_hospital.field_hospital_appointment_lines__id
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__id
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__id
+#: model:ir.model.fields,field_description:our_hospital.field_report_our_hospital_report_appointment__id
+#: model:ir.model.fields,field_description:our_hospital.field_report_our_hospital_report_patient__id
+#: model:ir.model.fields,field_description:our_hospital.field_report_our_hospital_report_patient_xls__id
+msgid "ID"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,help:our_hospital.field_our_appointment__message_unread
+#: model:ir.model.fields,help:our_hospital.field_our_patient__message_unread
+msgid "If checked new messages require your attention."
+msgstr "အကယ်၍ စစ်ဆေးမှုအသစ်ပြုလုပ်ပါကသင်၏အာရုံစူးစိုက်မှုကိုလိုအပ်သည်"
+
+#. module: our_hospital
+#: model:ir.model.fields,help:our_hospital.field_our_appointment__message_needaction
+#: model:ir.model.fields,help:our_hospital.field_our_patient__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,help:our_hospital.field_our_appointment__message_has_error
+#: model:ir.model.fields,help:our_hospital.field_our_patient__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__image
+msgid "Image"
+msgstr ""
+
+#. module: our_hospital
+#: selection:res.partner,company_type:0
+msgid "Individual"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__message_is_follower
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_create_appointment____last_update
+#: model:ir.model.fields,field_description:our_hospital.field_doctor____last_update
+#: model:ir.model.fields,field_description:our_hospital.field_hospital_appointment_lines____last_update
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment____last_update
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient____last_update
+#: model:ir.model.fields,field_description:our_hospital.field_report_our_hospital_report_appointment____last_update
+#: model:ir.model.fields,field_description:our_hospital.field_report_our_hospital_report_patient____last_update
+#: model:ir.model.fields,field_description:our_hospital.field_report_our_hospital_report_patient_xls____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_create_appointment__write_uid
+#: model:ir.model.fields,field_description:our_hospital.field_doctor__write_uid
+#: model:ir.model.fields,field_description:our_hospital.field_hospital_appointment_lines__write_uid
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__write_uid
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__write_uid
+#: model:ir.model.fields,field_description:our_hospital.field_report_our_hospital_report_appointment__write_uid
+#: model:ir.model.fields,field_description:our_hospital.field_report_our_hospital_report_patient__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_create_appointment__write_date
+#: model:ir.model.fields,field_description:our_hospital.field_doctor__write_date
+#: model:ir.model.fields,field_description:our_hospital.field_hospital_appointment_lines__write_date
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__write_date
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__write_date
+#: model:ir.model.fields,field_description:our_hospital.field_report_our_hospital_report_appointment__write_date
+#: model:ir.model.fields,field_description:our_hospital.field_report_our_hospital_report_patient__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__message_main_attachment_id
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: our_hospital
+#: selection:our.patient,age_group:0
+msgid "Major"
+msgstr ""
+
+#. module: our_hospital
+#: selection:doctor,gender:0
+#: model_terms:ir.ui.view,arch_db:our_hospital.hodpital_patient_search
+#: selection:our.patient,doctor_gender:0
+#: selection:our.patient,gender:0
+msgid "Male"
+msgstr "အထီး"
+
+#. module: our_hospital
+#: model:res.groups,name:our_hospital.group_hospital_manager
+msgid "Manager"
+msgstr "မန်နေဂျာ"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_hospital_appointment_lines__product_id
+msgid "Medicine"
+msgstr "ဆေး"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_res_config_settings__product_ids
+#: model_terms:ir.ui.view,arch_db:our_hospital.res_config_settings_view_form
+msgid "Medicines"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__message_has_error
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__message_ids
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: our_hospital
+#: selection:our.patient,age_group:0
+msgid "Minor"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__name
+#: model_terms:ir.ui.view,arch_db:our_hospital.hospital_patient_page
+msgid "Name"
+msgstr "နာမည်"
+
+#. module: our_hospital
+#: code:addons/our_hospital/models/appointment.py:24
+#: code:addons/our_hospital/models/appointment.py:37
+#: code:addons/our_hospital/models/appointment.py:39
+#: code:addons/our_hospital/models/patient.py:63
+#: code:addons/our_hospital/models/patient.py:91
+#: code:addons/our_hospital/models/patient.py:93
+#, python-format
+msgid "New"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__activity_date_deadline
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "လာမည့်လှုပ်ရှားမှုနောက်ဆုံးနေ့"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__activity_summary
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__activity_summary
+msgid "Next Activity Summary"
+msgstr "နောက်လုပ်ဆောင်ချက်အကျဉ်းချုပ်"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__activity_type_id
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__activity_type_id
+msgid "Next Activity Type"
+msgstr "Next ကိုအမျိုးအစား"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_res_config_settings__note
+#: model_terms:ir.ui.view,arch_db:our_hospital.res_config_settings_view_form
+msgid "Notes"
+msgstr "မှတ်စုများ"
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.appointment_form
+msgid "Notify"
+msgstr "အကြောင်းကြားပါ"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__message_needaction_counter
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__message_has_error_counter
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__message_has_error_counter
+msgid "Number of error"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,help:our_hospital.field_our_appointment__message_needaction_counter
+#: model:ir.model.fields,help:our_hospital.field_our_patient__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,help:our_hospital.field_our_appointment__message_has_error_counter
+#: model:ir.model.fields,help:our_hospital.field_our_patient__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,help:our_hospital.field_our_appointment__message_unread_counter
+#: model:ir.model.fields,help:our_hospital.field_our_patient__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: our_hospital
+#: selection:our.appointment,activity_state:0
+#: selection:our.patient,activity_state:0
+msgid "Overdue"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__user_id
+msgid "PRO"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_create_appointment__patient_id
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__patient_id
+#: model_terms:ir.ui.view,arch_db:our_hospital.dashboard_form_view
+#: model_terms:ir.ui.view,arch_db:our_hospital.hospital_patient_tree
+msgid "Patient"
+msgstr "လူနာ"
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.hospital_patient_page
+msgid "Patient Age"
+msgstr "လူနာအသက်"
+
+#. module: our_hospital
+#: model:ir.actions.act_window,name:our_hospital.act_patient_appointments
+#: model_terms:ir.ui.view,arch_db:our_hospital.dashboard_form_view
+msgid "Patient Appointment"
+msgstr "လူနာချိန်းဆိုမှု"
+
+#. module: our_hospital
+#: model:ir.actions.report,name:our_hospital.report_patient_card
+msgid "Patient Card"
+msgstr "လူနာကတ်ပြား"
+
+#. module: our_hospital
+#: model:mail.template,subject:our_hospital.patient_card_email_template
+msgid "Patient Card (Ref ${object.name_seq })"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.actions.report,name:our_hospital.report_patient_card_xls
+msgid "Patient Card Excel"
+msgstr ""
+
+#. module: our_hospital
+#: model:mail.template,report_name:our_hospital.patient_card_email_template
+msgid "Patient Card_${(object.name_seq)}"
+msgstr ""
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.hospital_patient_form
+msgid "Patient Form"
+msgstr "လူနာပုံစံ"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__name_seq
+msgid "Patient ID"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_sale_order__patient_name
+msgid "Patient Name"
+msgstr "လူနာအမည်"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__patient_name_upper
+msgid "Patient Name Upper"
+msgstr "လူနာအမည်အထက်"
+
+#. module: our_hospital
+#: model:ir.actions.server,name:our_hospital.hospital_patient_action
+msgid "Patient Server Action"
+msgstr ""
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.patient_kanban
+msgid "PatientName:"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.actions.act_window,name:our_hospital.act_patient_list
+#: model:ir.actions.act_window,name:our_hospital.action_patient
+#: model:ir.ui.menu,name:our_hospital.hospital_patient
+#: model_terms:ir.ui.view,arch_db:our_hospital.hodpital_patient_search
+#: model_terms:ir.ui.view,arch_db:our_hospital.products
+msgid "Patients"
+msgstr ""
+
+#. module: our_hospital
+#: code:addons/our_hospital/models/patient.py:39
+#, python-format
+msgid "Patients Server Action"
+msgstr ""
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.appointment_form
+msgid "Pharmacy"
+msgstr "ဆေးဆိုင်"
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__pharmacy_note
+msgid "Pharmacy Notes"
+msgstr ""
+
+#. module: our_hospital
+#: selection:our.appointment,activity_state:0
+#: selection:our.patient,activity_state:0
+msgid "Planned"
+msgstr ""
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.create_appointment_form
+#: model_terms:ir.ui.view,arch_db:our_hospital.hospital_patient_form
+msgid "Print"
+msgstr ""
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.hospital_patient_form
+msgid "Print_Excel"
+msgstr ""
+
+#. module: our_hospital
+#: selection:res.partner,company_type:0
+msgid "Python"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_hospital_appointment_lines__product_qty
+msgid "Quantity"
+msgstr ""
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.appointment_form
+msgid "Record Set Operations"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__note
+msgid "Registration Note"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_doctor__user_id
+msgid "Related User"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__activity_user_id
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_res_config_settings__module_stock_landed_costs
+msgid "STOCK COST"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model,name:our_hospital.model_sale_order
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__order_id
+msgid "Sale Order"
+msgstr ""
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.hospital_patient_form
+msgid "Send By Email"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_hospital_appointment_lines__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.ui.menu,name:our_hospital.hospital_patient_server_action_menu
+msgid "Server Action"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.actions.act_window,name:our_hospital.action_hospital
+#: model:ir.ui.menu,name:our_hospital.hospital_settings
+msgid "Settings"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__state
+msgid "Status"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,help:our_hospital.field_our_appointment__activity_state
+#: model:ir.model.fields,help:our_hospital.field_our_patient__activity_state
+msgid "Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.ticket_calendar
+msgid "Tickets Calendar"
+msgstr ""
+
+#. module: our_hospital
+#: selection:our.appointment,activity_state:0
+#: selection:our.patient,activity_state:0
+msgid "Today"
+msgstr "ဒီနေ့"
+
+#. module: our_hospital
+#: model_terms:ir.ui.view,arch_db:our_hospital.hospital_patient_tree
+msgid "Total of age"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__message_unread
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__message_unread_counter
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,field_description:our_hospital.field_our_appointment__website_message_ids
+#: model:ir.model.fields,field_description:our_hospital.field_our_patient__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model.fields,help:our_hospital.field_our_appointment__website_message_ids
+#: model:ir.model.fields,help:our_hospital.field_our_patient__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: our_hospital
+#: code:addons/our_hospital/models/patient.py:105
+#, python-format
+msgid "age must be greater than 5"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model,name:our_hospital.model_our_appointment
+msgid "create appointment"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model,name:our_hospital.model_report_our_hospital_report_patient
+msgid "create patient"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model,name:our_hospital.model_create_appointment
+msgid "for create appointment"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model,name:our_hospital.model_doctor
+msgid "for create doctor"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model,name:our_hospital.model_our_patient
+msgid "for create patient"
+msgstr ""
+
+#. module: our_hospital
+#: model:ir.model,name:our_hospital.model_report_our_hospital_report_patient_xls
+msgid "report.our_hospital.report_patient_xls"
+msgstr ""
+
+#. module: our_hospital
+#: selection:res.partner,company_type:0
+msgid "zaw naing"
+msgstr ""
+

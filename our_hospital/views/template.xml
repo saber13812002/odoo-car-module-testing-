@@ -1,0 +1,54 @@
+<odoo>
+    <template id="hospital_patient_page" name="Hospital Patient">
+        <t t-call="website.layout">
+            <h3>Computer are simply value or the set of value</h3>
+
+           <div class="row">
+                <div class="col-md-3">
+                    <h2>AAAAAAAAAAAA</h2>
+                </div>
+                <div class="col-md-4">
+                    <h2>BBBBBBBBBB</h2>
+                </div>
+                <div class="com-md-5">
+                    <h2> CCCCCCCCCC</h2>
+                </div>
+           </div>
+
+        <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <td>
+                             <h2 style="color:blue">Name</h2>
+                        </td>
+                        <td>
+                            <h2 style="color:blue">Patient Age</h2>
+                        </td>
+                         <td>
+                            <h2 style="color:blue">Email</h2>
+                        </td>
+
+                    </tr>
+                </thead>
+                <tbody>
+                  <t t-foreach="patients" t-as="pat">
+                    <tr>
+                        <td>
+                            <t t-esc="pat.name"/>
+
+                        </td>
+                        <td>
+                            <t t-esc="pat.age"/>
+                        </td>
+                         <td>
+                            <t t-esc="pat.email"/>
+                        </td>
+                    </tr>
+                  </t>
+
+
+                </tbody>
+            </table>
+        </t>
+    </template>
+</odoo>

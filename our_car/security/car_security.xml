@@ -1,0 +1,38 @@
+<odoo>
+    <record model="ir.module.category" id="module_car_management" >
+        <field name="name">Car Management</field>
+    </record>
+
+    <record id="group_user" model="res.groups">
+        <field name="name">User</field>
+        <field name="category_id" ref="module_car_management"/>
+    </record>
+
+    <record id="group_manager" model="res.groups">
+        <field name="name">Manager</field>
+        <field name="category_id" ref="module_car_management"/>
+        <field name="implied_ids" eval="[(4,ref('our_car.group_user'))]"/>
+    </record>
+
+    <record id="group_cio" model="res.groups">
+        <field name="name">CIO</field>
+        <field name="category_id" ref="module_car_management"/>
+        <field name="implied_ids" eval="[(4,ref('our_car.group_manager'))]"/>
+    </record>
+
+
+<!--    RECORD RULE -->
+
+    <record id="car_rule" model="ir.rule">
+        <field name="name">Rule for Car Management</field>
+        <field name="model_id" ref="model_our_car"/>
+        <field name="global" eval="True"/>
+        <field name="groups" eval="[(4,ref('our_car.group_user'))]"/>
+        <field name="domain_force">[('name','=','Pajero')]</field>
+        <field name="perm_read"   eval="1"/>
+        <field name="perm_write"  eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="1"/>
+
+    </record>
+</odoo>

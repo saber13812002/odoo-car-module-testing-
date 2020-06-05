@@ -1,0 +1,13 @@
+<odoo>
+    <data noupdate="1">
+        <record id="seq_car" model="ir.sequence">
+            <field name="name">Car Sequence</field>
+            <field name="code">my.car.sequence</field>
+            <field name="prefix">HP</field>
+            <field name="padding">5</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_our_car_user,access user car,model_our_car,our_car.group_user,1,0,0,0
+access_our_car_manager,access manager car,model_our_car,our_car.group_manager,1,1,1,0
+access_our_car_cio,access cio car,model_our_car,our_car.group_cio,1,1,1,1
+
+access_our_parking,access for parking,model_our_parking,,1,1,1,1
+access_our_feature,our.feature,model_our_feature,,1,1,1,1

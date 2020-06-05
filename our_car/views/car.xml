@@ -1,0 +1,72 @@
+<odoo>
+    <record id="carr_tree_form" model="ir.ui.view">
+        <field name="name">Car Tree</field>
+        <field name="model">our.car</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="driver_id"/>
+                <field name="horse_power"/>
+                <field name="door_number"/>
+                <field name="feature_id"/>
+            </tree>
+        </field>
+    </record>
+    <record id="car_form" model="ir.ui.view">
+        <field name="name">Car</field>
+        <field name="model">our.car</field>
+        <field name="arch" type="xml">
+            <form string="Car Form">
+                <sheet>
+                    <header>
+                        <field name="status" widget="statusbar"/>
+<!--                        FIRST WAY OF ODOO13 UDEMY-->
+                        <button name="set_car_to_used" string="Set Car Used" type="object"  class="oe_highlight" attrs="{'invisible':[('status','!=','new')]}"/>
+                        <button name="set_car_to_sold" string="Set Car Sold" type="object"  class="oe_highlight" attrs="{'invisible':[('status','!=','sold')]}"/>
+<!--                          SECOND WAY OF ODOO MATES-->
+                        <button name="action_used" string="used" type="object"  status="used" class="oe_highlight"  attrs="{'invisible':[('status','!=','new')]}"/>
+                        <button name="action_sold" string="sold"  type="object" status="sold" class="oe_highlight" attrs="{'invisible':[('status','=','sold')]}"/>
+
+                    </header>
+<!--                    FOR WIDGET BUTTON TEXT -->
+                      <widget name="web_ribbon"  text="New" bg_color="bg-danger" attrs="{'invisible':[('status','!=','new')]}"/>
+                      <widget name="web_ribbon"  text="Sold" bg_color="bg-success" attrs="{'invisible':[('status','!=','sold')]}"/>
+                    <group>
+                        <group>
+                            <field name="car_sequence" readonly="1"/>
+                            <field name="name_seq"/>
+
+                            <field name="name"/>
+                            <field name="horse_power" attrs="{'readonly':[('door_number','=',4)],'invisible':[('name','=','abc')]}"/>
+                            <field name="total_speed"/>
+                        </group>
+                        <group>
+                            <field name="door_number" />
+                            <field name="driver_id" attrs="{'invisible':[('horse_power','=',400)]}"/>
+                            <field name="feature_id" widget="many2many_tags"/>
+                            <field name="random_message"/>
+
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="action_car" model="ir.actions.act_window">
+        <field name="res_model">our.car</field>
+        <field name="name">Car</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+              Create your Own Car
+            </p>
+        </field>
+
+    </record>
+    <menuitem name="Car" id="menu_car_root"/>
+    <menuitem name="Cars" parent="menu_car_root" id="car_menu" sequence="1" action="action_car"/>
+
+</odoo>

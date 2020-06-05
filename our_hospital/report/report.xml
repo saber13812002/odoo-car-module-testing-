@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <report
+        id="report_patient_card"
+        string="Patient Card"
+        model="our.patient"
+
+        report_type="qweb-pdf"
+        name="our_hospital.report_patient"
+        file="our_hospital.report_patient"/>
+    <report
+        id='report_patient_card_xls'
+        string='Patient Card Excel'
+        model='our.patient'
+
+        report_type='xlsx'
+        name='our_hospital.report_patient_xls'
+        file='our_hospital.report_patient_xls'   />
+    <report
+        id="report_appointment"
+        string="Appointment Card"
+        model="our.appointment"
+
+        report_type="qweb-pdf"
+        name="our_hospital.report_appointment"
+        file="our_hospital.report_appointment"/>
+<!--    <report-->
+<!--        id="report_patient_card_xlx"-->
+<!--        string="Patient Card Excel"-->
+<!--        model="my.patient"-->
+<!--        report_type="xlsx"-->
+<!--        name="my_hospital.report_patient_xls"-->
+<!--        file="my_hospital.report_patient_xls"/>-->
+<!--    <report-->
+<!--        id="report_appointment_card"-->
+<!--        string="Appointment Card"-->
+<!--        model="my.create.appointement"-->
+<!--        report_type="qweb-pdf"-->
+<!--        name="my_hospital.report_appointment"-->
+<!--        file="my_hospital.report_appointment"-->
+<!--    />-->
+
+
+
+</odoo>
+

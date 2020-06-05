@@ -1,0 +1,35 @@
+<odoo>
+
+    <!--ACTIVATE SETTING FROM CODE -->
+
+    <data >
+        <record model="res.config.settings" id="res_config_settings" >
+            <field name="group_product_variant" eval="0"/>
+        </record>
+
+        <function model="res.config.settings" name="execute">
+            <value eval="[ref('res_config_settings')]"/>
+            <value eval="{}"/>
+        </function>
+
+    </data>
+     <data noupdate="1">
+        <record id="patient_xyz" model="our.patient">
+            <field name="name">Nevermore</field>
+            <field name="age">30</field>
+            <field name="gender">male</field>
+            <field name="age_group">major</field>
+            <field name="email">nevermore@gmail.com</field>
+            <field name="note">I like that Hero</field>
+
+        </record>
+    </data>
+      <data noupdate="1">
+        <record id="appointment_xyz" model="our.appointment">
+            <field name="patient_id" ref="patient_xyz"/>
+
+            <field name="note">Hello Dota</field>
+
+        </record>
+    </data>
+</odoo>
